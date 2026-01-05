@@ -1,0 +1,21 @@
+section {
+  padding: 1rem;
+  width: 100%;
+  /* border: 1px solid salmon; */
+}
+
+.education-list {
+  list-style: none;
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* ← clave */
+  gap: 3rem;
+  overflow-y: auto;
+}
+
+.content-list-item {
+  width: 20rem;
+}

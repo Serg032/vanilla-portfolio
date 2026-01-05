@@ -1,0 +1,23 @@
+:root {
+  --font-base: "Open Sans", sans-serif;
+  --font-highlight: "Ubuntu", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(26, 26, 23);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: rgb(235, 230, 192);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
