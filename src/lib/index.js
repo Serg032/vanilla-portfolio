@@ -1,7 +1,11 @@
 const contentItems = [
   { name: "Education", href: "./src/pages/education.html" },
-  { name: "Experience", href: "./src/pages/education.html" },
-  { name: "Languajes", href: "./src/pages/education.html" },
+  { name: "Experience", href: "./src/pages/experience.html" },
+  { name: "Technologies", href: "./src/pages/technologies.html" },
+  {
+    name: "cv",
+    href: "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/sergio-radigales-dev.pdf",
+  },
 ];
 
 const contentList = document.querySelector(".content-items-list");
@@ -18,6 +22,9 @@ contentItems.forEach((item) => {
   link.href = item.href;
   link.style.textDecoration = "none";
   link.style.color = color;
+  if (item.name === "cv") {
+    link.target = "_blank";
+  }
 
   const linkContentContainer = document.createElement("div");
   linkContentContainer.style.display = "flex";
@@ -30,13 +37,7 @@ contentItems.forEach((item) => {
   const linkText = document.createElement("span");
   linkText.textContent = item.name;
 
-  // const linkIcon = document.createElement("img");
-  // linkIcon.src = "./src/icons/add.png";
-  // linkIcon.style.width = "2rem";
-  // linkIcon.alt = "add-icon";
-
   linkContentContainer.appendChild(linkText);
-  // linkContentContainer.appendChild(linkIcon);
 
   link.appendChild(linkContentContainer);
   li.appendChild(link);

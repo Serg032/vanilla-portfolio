@@ -47,22 +47,67 @@ const listItems = [
       "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/apollo-certificate.pdf",
   },
   {
-    title: "GraphQL Developer - Associate",
+    title: "Hexagonal Architecture",
     description:
       "Learn what Docker is and how to get the most out of containers. Starting from the beginning, we'll see how to use Docker to run your application locally as if it were in production, starting a database with Docker Compose.",
-    school: "Apollo",
+    school: "Codely",
     schoolLink: "https://codely.com/en",
     certificationLink:
-      "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/apollo-certificate.pdf",
+      "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/arquitectura-hexagonal.pdf",
   },
   {
-    title: "GraphQL Developer - Associate",
+    title: "OOP Good Practices",
     description:
       "Learn what Docker is and how to get the most out of containers. Starting from the beginning, we'll see how to use Docker to run your application locally as if it were in production, starting a database with Docker Compose.",
-    school: "Apollo",
+    school: "Codely",
     schoolLink: "https://codely.com/en",
     certificationLink:
-      "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/apollo-certificate.pdf",
+      "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/buenas-practicas-de-programacion-orientada-a-objetos.pdf.pdf",
+  },
+  {
+    title: "Clean Code",
+    description:
+      "Learn what Docker is and how to get the most out of containers. Starting from the beginning, we'll see how to use Docker to run your application locally as if it were in production, starting a database with Docker Compose.",
+    school: "Codely",
+    schoolLink: "https://codely.com/en",
+    certificationLink:
+      "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/clean-code.pdf.pdf",
+  },
+  {
+    title: "Event Driven Architecture",
+    description:
+      "Learn what Docker is and how to get the most out of containers. Starting from the beginning, we'll see how to use Docker to run your application locally as if it were in production, starting a database with Docker Compose.",
+    school: "Codely",
+    schoolLink: "https://codely.com/en",
+    certificationLink:
+      "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/comunicacion-entre-microservicios-event-driven-architecture.pdf",
+  },
+  {
+    title: "Solid Principles",
+    description:
+      "Learn what Docker is and how to get the most out of containers. Starting from the beginning, we'll see how to use Docker to run your application locally as if it were in production, starting a database with Docker Compose.",
+    school: "Codely",
+    schoolLink: "https://codely.com/en",
+    certificationLink:
+      "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/principios-solid-aplicados.pdf.pdf",
+  },
+  {
+    title: "CQRS",
+    description:
+      "Learn what Docker is and how to get the most out of containers. Starting from the beginning, we'll see how to use Docker to run your application locally as if it were in production, starting a database with Docker Compose.",
+    school: "Codely",
+    schoolLink: "https://codely.com/en",
+    certificationLink:
+      "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/cqrs-command-query-responsibility-segregation.pdf",
+  },
+  {
+    title: "Python",
+    description:
+      "Learn what Docker is and how to get the most out of containers. Starting from the beginning, we'll see how to use Docker to run your application locally as if it were in production, starting a database with Docker Compose.",
+    school: "Codeacademy",
+    schoolLink: "https://codely.com/en",
+    certificationLink:
+      "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/Python-cert.pdf",
   },
 ];
 
@@ -72,6 +117,7 @@ listItems.forEach((item) => {
   const li = document.createElement("li");
   li.style.border = `1px solid ${color}`;
   li.style.borderRadius = "5px";
+  li.className = "content-list-item";
 
   const link = document.createElement("a");
   link.href = item.certificationLink;
@@ -80,7 +126,7 @@ listItems.forEach((item) => {
   link.style.color = color;
 
   const linkContentContainer = document.createElement("div");
-  linkContentContainer.style.width = "20rem";
+  linkContentContainer.style.width = "15rem";
   linkContentContainer.style.display = "flex";
   linkContentContainer.style.flexDirection = "column";
   linkContentContainer.style.alignItems = "start";
