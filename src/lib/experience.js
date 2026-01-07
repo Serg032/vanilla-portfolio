@@ -62,6 +62,7 @@ experiencies.forEach((experience) => {
   experienceContainer.style.borderRadius = "5px";
 
   const contentContainer = document.createElement("div");
+  contentContainer.className = "experience-list-item";
   contentContainer.style.width = "15rem";
   contentContainer.style.display = "flex";
   contentContainer.style.flexDirection = "column";

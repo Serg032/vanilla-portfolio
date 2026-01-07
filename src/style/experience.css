@@ -6,6 +6,12 @@ section {
 
 body {
   justify-content: start;
+  flex-direction: column;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
 }
 
 .experience-list {
@@ -15,4 +21,29 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+}
+
+@media (min-width: 1270px) {
+  body {
+    flex-direction: column;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .experience-list {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experience-list-item {
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
