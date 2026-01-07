@@ -8,7 +8,7 @@ h1 {
   margin: 0;
 }
 
-.content {
+.tech-content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -59,22 +59,18 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center !important;
-    min-height: 100vh;
+    justify-content: space-around;
   }
 
-  .content {
+  .tech-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    width: 100%;
     max-width: 1200px;
     align-items: start;
     justify-items: center;
-  }
-
-  .sub-content {
-    width: 100%;
+    height: 100%;
+    padding: 3rem;
   }
 
   .items-container {
