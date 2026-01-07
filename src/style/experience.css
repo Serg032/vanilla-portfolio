@@ -26,6 +26,7 @@ h1 {
 @media (min-width: 1270px) {
   body {
     flex-direction: column;
+    align-items: center;
   }
 
   h1 {
