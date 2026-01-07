@@ -126,6 +126,7 @@ listItems.forEach((item) => {
   link.style.color = color;
 
   const linkContentContainer = document.createElement("div");
+  linkContentContainer.className = "content-list-item-container";
   linkContentContainer.style.width = "15rem";
   linkContentContainer.style.display = "flex";
   linkContentContainer.style.flexDirection = "column";

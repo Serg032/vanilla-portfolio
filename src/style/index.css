@@ -22,3 +22,47 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+@media (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    height: 100% !important;
+  }
+
+  .social-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .year {
+    padding-bottom: 1rem;
+  }
+
+  .profile-description {
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .description {
+    width: 25rem;
+  }
+
+  .content {
+    height: 100% !important;
+    justify-content: center;
+  }
+
+  .content-list-item:hover {
+    box-shadow: 10px 5px 5px white;
+  }
+}

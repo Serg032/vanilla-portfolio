@@ -1,3 +1,7 @@
+body {
+  height: 100%;
+}
+
 section {
   padding: 1rem;
   width: 100%;
@@ -6,11 +10,42 @@ section {
 
 .education-list {
   list-style: none;
-  min-height: 100vh;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* ← clave */
   gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .education-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+    row-gap: 1rem;
+    padding: 0rem;
+  }
+
+  .content-list-item {
+    height: 7rem;
+  }
+
+  .content-list-item-container {
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-list-item:hover {
+    box-shadow: 10px 5px 5px white;
+  }
 }

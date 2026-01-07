@@ -27,6 +27,7 @@ contentItems.forEach((item) => {
   }
 
   const linkContentContainer = document.createElement("div");
+  linkContentContainer.className = "content-list-item-container";
   linkContentContainer.style.display = "flex";
   linkContentContainer.style.justifyContent = "center";
   linkContentContainer.style.alignItems = "center";
