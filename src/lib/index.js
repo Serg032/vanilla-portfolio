@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+  document.querySelector(".hero").classList.add("show");
+});
+
 const contentItems = [
   { name: "Education", href: "./src/pages/education.html" },
   { name: "Experience", href: "./src/pages/experience.html" },
