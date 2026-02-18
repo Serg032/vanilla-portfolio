@@ -10,6 +10,10 @@ const contentItems = [
     name: "cv",
     href: "https://sergio-radigales-portfolio.s3.eu-west-1.amazonaws.com/sergio-radigales-dev.pdf",
   },
+  {
+    name: "Blog",
+    href: "./src/pages/blog.html",
+  },
 ];
 
 const contentList = document.querySelector(".content-items-list");
