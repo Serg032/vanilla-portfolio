@@ -6,6 +6,13 @@ const entries = [
       "Factory Method is a creational design pattern that defines an interface for creating an object, but lets subclasses decide which concrete class to instantiate.",
     route: "./../pages/blog-entries/factory-method.html",
   },
+  {
+    title: "Strategy",
+    tags: ["Design Patterns", "Software Architecture"],
+    shortDescription:
+      "Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.",
+    route: "./../pages/blog-entries/strategy.html",
+  },
 ];
 
 const blogContent = document.querySelector(".blog-content");
